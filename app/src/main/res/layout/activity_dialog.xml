@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/white"
+    tools:context=".DialogActivity">
+    <LinearLayout
+
+        android:layout_centerInParent="true"
+        android:layout_width="280dp"
+        android:layout_height="260dp"
+        android:orientation="vertical">
+        <TextView
+
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="声明与条款"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/d_t_1"
+            android:textColor="@color/black"
+            android:gravity="top"
+            android:layout_gravity="center"
+            android:layout_width="240dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/d_t"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="不同意"
+            android:alpha="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <Button
+android:id="@+id/d_b"
+            android:text="同意并使用"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#0D84FF"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

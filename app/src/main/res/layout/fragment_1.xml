@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Fragment.Fragment1">
+
+    <TextView
+        android:background="@color/white"
+
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:letterSpacing="0.1"
+        android:gravity="center"
+        android:text="iH推荐"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <TextView
+        android:background="#F6F7F8"
+        android:layout_weight="1"
+        android:text="暂无内容"
+        android:textColor="#66000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refesh">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>
